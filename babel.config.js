@@ -1,12 +1,7 @@
 module.exports = function (api) {
   api.cache(true);
   return {
-    presets: [
-      'next/babel',
-      '@babel/preset-env',
-      '@babel/preset-react',
-      '@babel/preset-typescript',
-    ],
+    presets: ['next/babel', '@babel/preset-env', '@babel/preset-typescript'],
     plugins: [
       '@babel/plugin-transform-runtime',
       [
@@ -17,7 +12,6 @@ module.exports = function (api) {
           preprocess: false,
         },
       ],
-      ['transform-remove-console', { exclude: ['error', 'warn'] }],
       [
         'module-resolver',
         {
