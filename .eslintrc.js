@@ -9,9 +9,6 @@ module.exports = {
   ],
   parser: '@babel/eslint-parser',
   parserOptions: {
-    babelOptions: {
-      presets: ['@babel/preset-react'],
-    },
     ecmaFeatures: {
       jsx: true,
     },
@@ -24,6 +21,9 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'no-undef': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'no-dupe-keys': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
   },
   settings: {
     react: {
