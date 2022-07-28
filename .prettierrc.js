@@ -16,7 +16,7 @@ var tsOption = {
     // TODO: 이후에 containers -> template으로 변경하기
     '^@(?:components|atoms|molecules|organisms|templates|pages|containers)(.*)$',
     '^(?:apis|interfaces|config)(.*)$',
-    '^@(?:assets|contexts|constants|hooks|styles|util|store)(.*)$',
+    '^@(?:assets|constants|hooks|styles|util)(.*)$',
     '^[./]',
   ],
   plugins: [require.resolve('@trivago/prettier-plugin-sort-imports')],
